@@ -5,7 +5,7 @@ async function buscarTodos(req, res) {
         const quartos = await Quarto.find();
         res.json(quartos);
     } catch (error) {
-        res.status(500).json({ mensagem: "Erro ao buscar quartos." });
+        res.status(500).json ({ mensagem: "Erro ao buscar quartos." });
     }
 }
 
