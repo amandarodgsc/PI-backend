@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-require('dotenv').config(); // Carrega as variáveis de ambiente do arquivo .env
+require('dotenv').config();
 
-const DB_USER = process.env.DB_USER; // Obtém o usuário do banco de dados do arquivo .env
-const DB_PASS = process.env.DB_PASS; // Obtém a senha do banco de dados do arquivo .env
-const DB_HOST = process.env.DB_HOST; // Obtém o host do banco de dados do arquivo .env
-const DB_NAME = process.env.DB_NAME; // Obtém o nome do banco de dados do arquivo .env
+const DB_USER = process.env.DB_USER;
+const DB_PASS = process.env.DB_PASS;
+const DB_HOST = process.env.DB_HOST;
+const DB_NAME = process.env.DB_NAME;
 
 function DBConnect() {
     return new Promise((resolve, reject) => {
@@ -21,5 +21,6 @@ function DBConnect() {
 }
 
 module.exports = DBConnect;
+
 
 
